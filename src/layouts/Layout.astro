@@ -2,6 +2,8 @@
 import '@fontsource-variable/onest';
 
 import Header from "../components/Header.astro";
+
+const { title } = Astro.props
 ---
 
 <!doctype html>
@@ -11,7 +13,7 @@ import Header from "../components/Header.astro";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title}</title>
 	</head>
 
 	<body>
