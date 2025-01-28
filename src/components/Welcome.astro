@@ -4,11 +4,14 @@ import LinkedInIcon from "../components/icons/LinkedIn.astro";
 import SocialPill from "./icons/SocialPill.astro";
 import GitHubIcon from "./icons/GitHub.astro";
 import MailIcon from './icons/Mail.astro'
+import Experiencie from "./Experiencie.astro";
+import SectionContainer from "./SectionContainer.astro";
+import Briefcase from "./icons/Briefcase.astro";
 ---
 
 <div id="container">
   <main>
-    <section class="w-full mx-auto lg:w-[740px] py-44">
+    <SectionContainer class="py-44 pb-20">
       <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
         Hey, soy Lautaro <a
           href="https://www.linkedin.com/in/lautarov-dev/"
@@ -43,6 +46,14 @@ import MailIcon from './icons/Mail.astro'
             lautarosval@gmail.com
           </SocialPill>
       </nav>
-    </section>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Briefcase class="size-7" />
+        Experiencia laboral
+      </h2>
+      <Experiencie />
+    </SectionContainer>
   </main>
 </div>
