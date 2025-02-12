@@ -10,10 +10,10 @@ import Briefcase from "./icons/Briefcase.astro";
 ---
 
 <div id="container">
-  <main>
+  <main class="px-4">
     <SectionContainer class="py-44 pb-20">
-      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
-        Hey, soy Lautaro <a
+      <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+        Hola, soy Lautaro <a
           href="https://www.linkedin.com/in/lautarov-dev/"
           target="_blank"
           rel="noopener"
@@ -21,7 +21,7 @@ import Briefcase from "./icons/Briefcase.astro";
           ><Badge>Disponible para trabajar</Badge></a
         >
       </h1>
-      <h2 class="text-2xl opacity-80 text-wrap">
+      <h2 class="text-xl lg:text-2xl opacity-90 text-wrap max-w-[700px]">
         <span>+2 años de experiencia.</span><span class="text-yellow-200/90">
           Desarrollador Web.</span
         >
@@ -32,17 +32,17 @@ import Briefcase from "./icons/Briefcase.astro";
         >
       </h2>
 
-      <nav class="flex gap-x-4 mt-8">
+      <nav class="flex gap-4 mt-8 flex-wrap">
           <SocialPill href="https://www.linkedin.com/in/lautarov-dev/">
-            <LinkedInIcon class="size-6" />
+            <LinkedInIcon class="size-4 md:size-6" />
             Linkedin
           </SocialPill>
 		  <SocialPill href="https://github.com/lautaroVal">
-            <GitHubIcon class="size-6" />
+            <GitHubIcon class="size-4 md:size-6" />
             GitHub
           </SocialPill>
-		  <SocialPill href="">
-            <MailIcon class="size-6" />
+		  <SocialPill href="mailto:lautarosval@gmail.com">
+            <MailIcon class="size-4 md:size-6" />
             lautarosval@gmail.com
           </SocialPill>
       </nav>
