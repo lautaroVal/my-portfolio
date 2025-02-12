@@ -1,13 +1,13 @@
 ---
 const PROJECTS = [
   {
-    title: "Project 1",
+    title: "SVGL - A beautiful library with SVG logos",
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut urna in nunc facilisis ultrices. Donec urna ipsum, pulvinar ut mattis id, scelerisque et tellus. Fusce at auctor dui.',
-    link: "#",
-    github: "#",
-    image: "https://www.uship.com/learn/ca/wp-content/uploads/sites/3/thumbnail-placeholder-300x200-300x200.png",
-    tags: ["HTML", "CSS", "JavaScript"],
+      'Created from scratch with Next.js and Tailwind CSS.',
+    link: "https://svgl.app/",
+    github: "https://github.com/pheralb/svgl",
+    image: "/projects/svgl.webp",
+    tags: ["Next.js", "Tailwind CSS", "React"],
   }
 ]
 ---
@@ -15,15 +15,18 @@ const PROJECTS = [
 {
     PROJECTS.map(({ image, title, description, tags}) => (
         <article>
-            <h3>{title}</h3>
-            <p>{description}</p>
+            <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+            <p class="text-lg mb-4 text-pretty">{description}</p>
             <ul>
                 {tags.map(tag => (
                     <li>{tag}</li>
                 ))
                 }
             </ul>
-            <img src={image} alt={`Captura de pantalla del proyecto ${image}`} />
+            <img 
+            class="rounded shadow-2xl shadow-white/10"
+            src={image} 
+            alt={`Captura de pantalla del proyecto ${image}`} />
         </article>
     ))
 }
