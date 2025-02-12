@@ -7,11 +7,13 @@ import MailIcon from './icons/Mail.astro'
 import Experiencie from "./Experiencie.astro";
 import SectionContainer from "./SectionContainer.astro";
 import Briefcase from "./icons/Briefcase.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import Projects from "./Projects.astro";
 ---
 
 <div id="container">
   <main class="px-4">
-    <SectionContainer class="py-44 pb-20">
+    <SectionContainer class="py-44 pb-32">
       <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
         Hola, soy Lautaro <a
           href="https://www.linkedin.com/in/lautarov-dev/"
@@ -49,11 +51,20 @@ import Briefcase from "./icons/Briefcase.astro";
     </SectionContainer>
 
     <SectionContainer id="experiencia">
-      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
         <Briefcase class="size-7" />
         Experiencia laboral
       </h2>
       <Experiencie />
+    </SectionContainer>
+
+    
+    <SectionContainer id="experiencia">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <CodeIcon class="size-7" />
+        Proyectos
+      </h2>
+      <Projects />
     </SectionContainer>
   </main>
 </div>
