@@ -1,9 +1,33 @@
-<header class="flex justify-center items-center py-5 w-full xl:w-[1120px] mx-auto">
-    <nav class="flex flex-row gap-x-10 opacity-80">
-        <a href="#inicio" class=" hover:text-gray-700">Inicio</a>
-        <a href="#experiencia" class=" hover:text-gray-700">Experiencia</a>
-        <a href="#proyectos" class=" hover:text-gray-700">Proyectos</a>
-        <a href="#sobre-mi" class="hover:text-gray-700" >Sobre mi</a>
-        <a href="#contacto" class="hover:text-gray-700" >Contacto</a>
+<header 
+class={`
+flex justify-center items-center 
+mx-auto
+py-5 
+sticky top-0
+w-full xl:w-[1120px] 
+z-10
+`}
+>
+    <nav 
+    class={`
+    border border-black/30 rounded-full
+    px-3 py-1
+    flex flex-row items-center
+    bg-neutral-900 dark:bg-black/50
+    backdrop-blur-2xl
+    `}
+    >
+        <a 
+        href="/" 
+        class=" hover:bg-white/10 rounded-full px-3 transition">Inicio</a
+        >
+        <a href="/#experiencia" class=" hover:bg-white/10 rounded-full px-3 transition">Experiencia</a
+            >
+        <a href="/#proyectos" class=" hover:bg-white/10 rounded-full px-3 transition">Proyectos</a
+            >
+        <a href="/#sobre-mi" class="hover:bg-white/10 rounded-full px-3 transition" >Sobre mi</a
+            >
+        <a href="/#contacto" class="hover:bg-white/10 rounded-full px-3 transition" >Contacto</a
+            >
     </nav>
 </header>

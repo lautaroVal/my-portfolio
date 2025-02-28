@@ -1,14 +1,16 @@
 ---
-import Badge from "./Badge.astro";
-import LinkedInIcon from "../components/icons/LinkedIn.astro";
-import SocialPill from "./icons/SocialPill.astro";
-import GitHubIcon from "./icons/GitHub.astro";
-import MailIcon from './icons/Mail.astro'
-import Experiencie from "./Experiencie.astro";
-import SectionContainer from "./SectionContainer.astro";
-import Briefcase from "./icons/Briefcase.astro";
-import CodeIcon from "../components/icons/Code.astro";
-import Projects from "./Projects.astro";
+import AboutMe from "@/components/AboutMe.astro";
+import Badge from "@/components/Badge.astro";
+import Briefcase from "@/components/icons/Briefcase.astro";
+import CodeIcon from "@/components/icons/Code.astro";
+import Experiencie from "@/components/Experiencie.astro";
+import GitHubIcon from "@/components/icons/GitHub.astro";
+import LinkedInIcon from "@/components/icons/LinkedIn.astro";
+import MailIcon from '@/components/icons/Mail.astro'
+import ProfileCheck from "@/components/icons/Profile.astro";
+import Projects from "@/components/Projects.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import SocialPill from "@/components/icons/SocialPill.astro";
 ---
 
 <div id="container">
@@ -69,6 +71,14 @@ import Projects from "./Projects.astro";
         Proyectos
       </h2>
       <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="sobre-mi">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <ProfileCheck class="size-7" />
+        Sobre mí
+      </h2>
+      <AboutMe />
     </SectionContainer>
   </main>
 </div>
